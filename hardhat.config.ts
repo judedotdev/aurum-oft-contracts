@@ -112,6 +112,7 @@ const config: HardhatUserConfig = {
         apiKey: {
             "sonic-testnet": process.env.SONICSCAN_API_KEY || "",
             "amoy-testnet": process.env.POLYGONSCAN_API_KEY || "",
+            "sonic": process.env.SONICSCAN_API_KEY || "",
             "real": "empty",
         },
         customChains: [
