@@ -50,6 +50,7 @@ const deploy: DeployFunction = async (hre) => {
         ],
         log: true,
         skipIfAlreadyDeployed: false,
+        waitConfirmations: 5, // Wait for block confirmations before verifying
     })
 
     console.log(`Deployed contract: ${contractName}, network: ${hre.network.name}, address: ${address}`)
